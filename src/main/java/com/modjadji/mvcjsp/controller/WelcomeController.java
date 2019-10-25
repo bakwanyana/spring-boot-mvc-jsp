@@ -14,4 +14,9 @@ public class WelcomeController {
         model.put("message", this.welcomeMessage);
         return "welcome";
     }
+
+    @RequestMapping("/home")
+    public String home(){
+        return "index";
+    }
 }
